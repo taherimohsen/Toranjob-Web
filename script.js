@@ -1,12 +1,14 @@
 import 'boxicons'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
-AOS.init();
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
+// import styles bundle
+import 'swiper/css/bundle';
 
+
+// AOS is library for fade animation
+AOS.init();
 // You can also pass an optional settings object
 // below listed default settings
 AOS.init({
@@ -30,4 +32,42 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
+});
+
+const swiperHeader = new Swiper(".header-swiper", {
+  direction: "vertical",
+  spaceBetween: 30,
+  effect: "fade",
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".header-swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">'+ (index<10?0:"") + (index + 1) + "</span>";
+    },
+  },
+});
+const swiperSection = new Swiper(".section-swiper", {
+  spaceBetween: 10,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".section-swiper-pagination",
+    // type: 'progressbar',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">'+ (index<10?0:"") + (index + 1) + "</span>";
+    },
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
 });
