@@ -19,13 +19,19 @@
     --swiper-pagination-bullet-opacity: 1;
 
 }
-
+/* all font-families are here(from google fonts links) */
 /*
 font-family: 'IBM Plex Sans Arabic', sans-serif;
 font-family: 'Noto Sans Arabic', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Noto Sans Arabic', sans-serif; */
+/*  font-family: 'Noto Nastaliq Urdu', serif; */
 body {
     font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+#header-title {
+    font-family: 'Noto Nastaliq Urdu', serif;
 }
 
 input {
