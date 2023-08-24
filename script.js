@@ -106,6 +106,7 @@ function toggleMenu() {
 // this is main project function
 function app() {
   toggleMenu();
+  
 }
 
 document.addEventListener('DOMContentLoaded', app);

@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="mx-auto w-full max-w-[1366px]">
-      <header class="h-[100dvh] w-full">
+      <header class="w-full h-[100dvh] relative border-b-2">
         <nav class="fixed right-0 top-0 z-20 h-auto w-full">
           <div
             id="navbar-sm"
@@ -128,6 +128,7 @@
             </svg>
           </div>
         </nav>
+
         <div class="swiper header-swiper" dir="rtl">
           <div class="swiper-wrapper">
             <div class="swiper-slide bg-fixed">
@@ -187,34 +188,22 @@
           </div>
           <!-- <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div> -->
-          <div class="swiper-pagination header-swiper-pagination"></div>
+          <div class="hidden lg:block">
+            <div class="swiper-pagination header-swiper-pagination"></div>
+          </div>
         </div>
+        <!-- <div class="z-20 absolute bottom-0 right-0 w-full flex justify-center p-10">
+          <h1 class="text-6xl">
+            ربات کاریابی توران
+          </h1>
+        </div> -->
       </header>
       <main class="h-auto w-full md:min-h-[100dvh]">
-        <section class="flex h-auto flex-col p-5 md:h-[100dvh]">
+        <section class="flex flex-col">
           <div class="swiper section-swiper" dir="ltr">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="flex h-full w-full items-start justify-between">
-                  <div>
-                    <img
-                      src="https://blogassets.airtel.in/wp-content/uploads/2023/02/4-7.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="flex items-start justify-start">
-                    <p>
-                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                      روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-                      شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
-                      بهبود ابزارهای
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex h-full w-full items-center justify-between">
+                <div class="flex h-full w-full items-center justify-between pb-10">
                   <div>
                     <img
                       src="https://blogassets.airtel.in/wp-content/uploads/2023/02/4-7.jpg"
