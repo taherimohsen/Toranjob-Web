@@ -121,9 +121,7 @@ document.addEventListener('DOMContentLoaded', app);
 //  start news
 let flagNews = true
 let news = document.querySelector('.news')
-let mdreviews = document.querySelector('.mdreviews')
 let reviews = document.querySelector('.reviews')
-let mdnews = document.querySelector('.mdnews')
 let boxnews = document.querySelector('.boxnews')
 let boxreviews = document.querySelector('.boxreviews')
 
