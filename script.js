@@ -71,7 +71,7 @@ function app() {
     direction: 'vertical',
     spaceBetween: 30,
     effect: 'fade',
-    centeredSlides: true,
+    centeblueSlides: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -94,7 +94,7 @@ function app() {
   // sub slider
   const swiperSection = new Swiper('.section-swiper', {
     spaceBetween: 10,
-    centeredSlides: true,
+    centeblueSlides: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
@@ -117,3 +117,46 @@ function app() {
   });
 }
 document.addEventListener('DOMContentLoaded', app);
+
+//  start news
+let flagNews = true
+let news = document.querySelector('.news')
+let mdreviews = document.querySelector('.mdreviews')
+let reviews = document.querySelector('.reviews')
+let mdnews = document.querySelector('.mdnews')
+let boxnews = document.querySelector('.boxnews')
+let boxreviews = document.querySelector('.boxreviews')
+
+let newsToggle = ()=>{if (flagNews) {
+  news.classList.add('bg-telegram-blue-secondary')
+  reviews.classList.remove('bg-telegram-blue-secondary')
+  boxnews.classList.add('grid')
+  boxnews.classList.remove('hidden')
+  boxreviews.classList.add('hidden')
+  boxreviews.classList.remove('grid')
+} else {
+  reviews.classList.add('bg-telegram-blue-secondary')
+  news.classList.remove('bg-telegram-blue-secondary')
+  boxnews.classList.add('hidden')
+  boxnews.classList.remove('grid')
+  boxreviews.classList.add('grid')
+  boxreviews.classList.remove('hidden')
+
+}
+
+}
+news.addEventListener('click', () => {
+  flagNews = true
+  newsToggle()
+
+})
+reviews.addEventListener('click', () => {
+  flagNews = false
+  newsToggle()
+})
+window.addEventListener('load', () => {
+  flagNews = true
+  newsToggle()
+})
+
+//  end news 
