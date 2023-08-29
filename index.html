@@ -24,7 +24,18 @@
     />
     <title>توران جاب</title>
   </head>
-  <body>
+  <body class="relative ">
+    <div class="fixed flex flex-col gap-2 px-2 py-1 rounded-md bg-telegram-dark text-telegram-light left-1 -translate-y-1/2 top-1/2 z-10">
+      <div class="cursor-pointer duration-300 hover:text-telegram-blue-primary">
+        <i class="bi bi-telegram"></i>
+      </div>
+      <div class="cursor-pointer duration-300 hover:text-telegram-blue-primary">
+        <i class="bi bi-twitter"></i>
+      </div>
+      <div class="cursor-pointer duration-300 hover:text-telegram-blue-primary">
+        <i class="bi bi-instagram"></i>
+      </div>
+    </div>
     <div class="mx-auto w-full max-w-[1366px]">
       <header class="relative h-[100dvh] w-full border-b-2">
         <!-- nav is fixed on top and has two diffrent contents in wide screen and small screens -->
@@ -242,7 +253,7 @@
 
         <!-- start boxes -->
         <section>
-          <div class="grid grid-cols-1 gap-5 px-3 py-20 md:grid-cols-2">
+          <div class="grid grid-cols-1 gap-5 px-16 py-20 md:grid-cols-2">
             <div
               class="group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-telegram-gray duration-300 hover:bg-telegram-blue-primary"
             >
@@ -401,7 +412,7 @@
             </div>
 
             <!-- news -->
-            <div class="boxnews mx-16 grid grid-cols-1 gap-5 md:grid-cols-2">
+            <div class="boxnews grid grid-cols-1 gap-5 px-16 md:grid-cols-2">
               <div
                 class="mid mt-5 bg-telegram-light px-5 shadow-lg shadow-telegram-blue-primary"
               >
@@ -482,7 +493,7 @@
       </main>
       <footer>
         <div
-          class="mt-20 flex flex-col items-center bg-telegram-gray px-20 py-20 gap-10 "
+          class="mt-20 flex flex-col items-center gap-10 bg-telegram-gray px-20 py-20"
         >
           <div><img src="./images/footer/telegram.png" alt="" /></div>
           <div class="flex flex-wrap gap-7 text-telegram-light">
@@ -505,19 +516,25 @@
               >Super Soco Dealer Site</a
             >
           </div>
-          <div class="icon flex gap-3 text-telegram-light text-2xl">
-            <div class="hover:text-telegram-blue-primary duration-300 cursor-pointer">
+          <div class="icon flex gap-3 text-2xl text-telegram-light">
+            <div
+              class="cursor-pointer duration-300 hover:text-telegram-blue-primary"
+            >
               <i class="bi bi-telegram"></i>
             </div>
-            <div class="hover:text-telegram-blue-primary duration-300 cursor-pointer">
+            <div
+              class="cursor-pointer duration-300 hover:text-telegram-blue-primary"
+            >
               <i class="bi bi-twitter"></i>
             </div>
-            <div class="hover:text-telegram-blue-primary duration-300 cursor-pointer">
+            <div
+              class="cursor-pointer duration-300 hover:text-telegram-blue-primary"
+            >
               <i class="bi bi-instagram"></i>
             </div>
           </div>
           <div class="copy font-bold text-telegram-dark">
-            <p>©  تمامی حق و حقوق این سایت و ربات محفوظ میباشد</p>
+            <p>© تمامی حق و حقوق این سایت و ربات محفوظ میباشد</p>
           </div>
         </div>
       </footer>
