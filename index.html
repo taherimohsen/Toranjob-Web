@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<!doctype html>
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,12 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Harmattan&family=IBM+Plex+Sans+Arabic&family=Noto+Sans+Arabic:wght@300;400&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
@@ -27,15 +32,15 @@
   <body class="relative">
     <!-- start tell us left fixed -->
     <div
-      class="fixed flex flex-col gap-2 px-2 py-1 rounded-md bg-telegram-dark text-telegram-light left-1 -translate-y-1/2 top-1/2 z-10"
+      class="text-soco-light-primary fixed left-1 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-2 rounded-md bg-soco-dark px-2 py-1"
     >
-      <div class="cursor-pointer duration-300 hover:text-telegram-blue-primary">
-        <i class="bi bi-telegram"></i>
+      <div class="cursor-pointer duration-300 hover:text-soco-red">
+        <i class="bi bi-soco"></i>
       </div>
-      <div class="cursor-pointer duration-300 hover:text-telegram-blue-primary">
+      <div class="cursor-pointer duration-300 hover:text-soco-red">
         <i class="bi bi-twitter"></i>
       </div>
-      <div class="cursor-pointer duration-300 hover:text-telegram-blue-primary">
+      <div class="cursor-pointer duration-300 hover:text-soco-red">
         <i class="bi bi-instagram"></i>
       </div>
     </div>
@@ -47,7 +52,7 @@
         <nav class="fixed right-0 top-0 z-20 h-auto w-full">
           <div
             id="navbar-sm"
-            class="mx-auto flex h-10 w-full max-w-[1366px] items-center justify-between bg-telegram-dark px-5 lg:hidden"
+            class="mx-auto flex h-10 w-full max-w-[1366px] items-center justify-between bg-soco-dark bg-opacity-40 px-5 backdrop-blur-sm lg:hidden"
           >
             <button
               type="button"
@@ -57,126 +62,75 @@
             >
               <box-icon name="menu" color="#ffffff" size="md"></box-icon>
             </button>
-            <h1 class="inline-flex h-full items-center">
-              <box-icon
-                name="telegram"
-                type="logo"
-                color="#0088cc"
-                size="md"
-              ></box-icon>
-            </h1>
+            <div class="h-full py-2">
+              <img
+                src="https://supersoco.co.uk/wp-content/uploads/2020/12/ss_logo.svg"
+                alt="logo"
+                class="h-full"
+              />
+            </div>
           </div>
           <div
             id="navbar-lg"
-            class="mx-auto hidden h-16 w-full max-w-[1366px] items-center justify-between bg-telegram-dark p-2.5 px-5 lg:flex"
+            class="mx-auto hidden h-24 w-full max-w-[1366px] items-center justify-between bg-soco-dark bg-opacity-70 p-2.5 px-5 lg:flex"
           >
-            <ul class="text-md flex h-full gap-2.5 text-telegram-light">
+            <ul
+              class="text-md text-soco-light-primary flex h-full gap-10 font-semibold"
+            >
               <!--section anchors will be add in a elemnts and in href att-->
               <li>
                 <a
-                  class="inline-flex h-full items-center hover:text-telegram-blue-secondary active:text-telegram-blue-secondary transition-all"
+                  class="inline-flex h-full items-center transition-all hover:text-soco-red active:text-soco-red"
                   href="#"
-                  >توران جاب چیست ؟
+                  >Contact
                 </a>
               </li>
               <li>
                 <a
-                  class="inline-flex h-full items-center hover:text-telegram-blue-secondary active:text-telegram-blue-secondary transition-all"
+                  class="inline-flex h-full items-center transition-all hover:text-soco-red active:text-soco-red"
                   href="#"
-                  >امکانات</a
+                  >FAQs</a
                 >
               </li>
               <!--this link is for section how to use bot -->
-              <li>
+              <!-- <li>
                 <a
-                  class="inline-flex h-full items-center hover:text-telegram-blue-secondary active:text-telegram-blue-secondary transition-all rounded-lg bg-telegram-blue-primary px-2.5"
+                  class="inline-flex h-full items-center hover:text-soco-red active:text-soco-red transition-all rounded-lg bg-soco-blue-primary px-2.5"
                   href="#"
                   >شروع کنید</a
                 >
-              </li>
+              </li> -->
               <li>
                 <a
-                  class="inline-flex h-full items-center hover:text-telegram-blue-secondary active:text-telegram-blue-secondary transition-all"
+                  class="inline-flex h-full items-center transition-all hover:text-soco-red active:text-soco-red"
                   href="#"
-                  >اسپانسرها</a
+                  >Offers</a
                 >
               </li>
               <li>
                 <a
-                  class="inline-flex h-full items-center hover:text-telegram-blue-secondary active:text-telegram-blue-secondary transition-all"
+                  class="inline-flex h-full items-center transition-all hover:text-soco-red active:text-soco-red"
                   href="#"
-                  >مدیریت و توسعه دهندگان</a
+                  >Dealers</a
                 >
               </li>
               <li>
                 <a
-                  class="inline-flex h-full items-center hover:text-telegram-blue-secondary active:text-telegram-blue-secondary transition-all"
+                  class="inline-flex h-full items-center transition-all hover:text-soco-red active:text-soco-red"
                   href="#"
-                  >درباره ی مدیریت</a
-                >
-              </li>
-              <li>
-                <a
-                  class="inline-flex h-full items-center hover:text-telegram-blue-secondary active:text-telegram-blue-secondary transition-all"
-                  href="#"
-                  >تماس باما</a
+                  >Range</a
                 >
               </li>
             </ul>
-            <svg
-              id="logo-10"
-              width="163"
-              height="42"
-              viewBox="0 0 163 42"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M30.21 17.719C33.348 17.719 34.054 19.082 34.054 20.782C34.054 22.584 33.2 23.875 30.223 23.875C27.265 23.875 26.41 22.659 26.41 20.782C26.41 18.935 27.342 17.719 30.21 17.719Z"
-                class="ccustom"
-                fill="#fff"
-              ></path>
-              <path
-                d="M63.004 17.719C66.142 17.719 66.848 19.082 66.848 20.782C66.848 22.584 65.993 23.875 63.017 23.875C60.06 23.875 59.204 22.659 59.204 20.782C59.204 18.935 60.136 17.719 63.004 17.719Z"
-                class="ccustom"
-                fill="#fff"
-              ></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M2.42676 38.5V3.047H161.005V38.5H2.42676ZM78.0048 36.5H159.005V5.047H78.0048V36.5ZM30.225 26.893C35.796 26.893 38.138 24.49 38.138 20.737C38.138 16.923 35.5 14.656 30.225 14.656C25.031 14.656 22.297 17.118 22.297 20.737C22.297 24.821 25.165 26.893 30.225 26.893ZM10.856 14.926V26.713H22.1V23.574H14.924V14.926H10.856ZM50.722 26.713L50.617 25.571C49.2561 26.5422 47.5997 27.0096 45.932 26.893C43.425 26.893 41.337 26.142 40.166 24.626C39.3936 23.5192 39.0036 22.1906 39.055 20.842C39.0111 19.5217 39.4146 18.2253 40.2 17.163C41.385 15.692 43.533 14.716 46.731 14.716C50.41 14.716 52.572 15.842 53.502 17.734C53.7016 18.1796 53.8189 18.6576 53.848 19.145H49.956C49.8579 18.8488 49.6754 18.5878 49.431 18.394C48.6557 17.88 47.7299 17.6423 46.803 17.719C46.2593 17.6531 45.7077 17.7033 45.1849 17.8664C44.6621 18.0295 44.1798 18.3017 43.77 18.665C43.3046 19.302 43.0861 20.0862 43.155 20.872C43.101 21.6217 43.3019 22.3677 43.725 22.989C44.1385 23.3743 44.6301 23.6661 45.1663 23.8449C45.7026 24.0236 46.2709 24.0851 46.833 24.025C47.9493 24.1158 49.0576 23.7715 49.926 23.064C50.1125 22.8308 50.2411 22.5566 50.301 22.264H46.113V19.731H53.95V26.713H50.722ZM63.019 26.893C68.589 26.893 70.932 24.49 70.932 20.737C70.932 16.923 68.2899 14.656 63.019 14.656C57.825 14.656 55.091 17.118 55.091 20.737C55.091 24.821 57.959 26.893 63.019 26.893Z"
-                class="ccustom"
-                fill="#fff"
-              ></path>
-              <path
-                d="M84.857 26.668V14.881H87.757V26.668H84.857Z"
-                class="ccustom"
-                fill="#fff"
-              ></path>
-              <path
-                d="M102.649 21.743C101.914 22.704 100.649 23.143 98.866 23.154C98.49 23.154 93.505 23.139 93.505 23.139V26.668H90.667V14.881H98.867C99.5242 14.8115 100.189 14.8812 100.817 15.0855C101.446 15.2899 102.024 15.6243 102.515 16.067C103.163 16.9112 103.478 17.9638 103.401 19.025C103.467 19.9902 103.202 20.9491 102.649 21.743ZM100.322 17.9C100.022 17.45 99.375 17.2 98.28 17.2H93.49V20.788H98.249C99.42 20.788 100.037 20.548 100.322 20.082C100.491 19.7537 100.564 19.384 100.532 19.016C100.557 18.6322 100.485 18.2483 100.322 17.9Z"
-                class="ccustom"
-                fill="#fff"
-              ></path>
-              <path
-                d="M111.764 26.848C106.418 26.848 104.782 24.848 104.782 22.869H107.815C107.815 23.845 109.151 24.581 111.899 24.581C114.631 24.581 115.352 24.1 115.352 23.319C115.352 22.448 114.812 22.178 112.274 21.893C111.774 21.848 110.413 21.683 109.902 21.608C106.302 21.202 104.916 20.136 104.916 18.229C104.916 16.217 106.944 14.701 111.343 14.701C116.118 14.701 117.95 16.578 117.95 18.53H114.95C114.95 17.539 113.824 16.968 111.166 16.968C108.433 16.968 107.848 17.343 107.848 18.079C107.848 18.845 108.448 19.085 111.348 19.43C112.009 19.521 113.48 19.686 113.885 19.73C116.949 20.045 118.33 21.156 118.33 23.123C118.325 25.466 116.223 26.848 111.764 26.848Z"
-                class="ccustom"
-                fill="#fff"
-              ></path>
-              <path
-                d="M126.87 26.833C122.952 26.833 120.399 25.286 120.399 22.033V14.881H123.266V22.073C123.266 23.56 124.483 24.55 126.99 24.55C129.257 24.55 130.609 23.62 130.609 22.073V14.881H133.447V22.3C133.447 25.257 131.074 26.833 126.87 26.833Z"
-                class="ccustom"
-                fill="#fff"
-              ></path>
-              <path
-                d="M148.987 26.668V18.8L145.308 26.668H142.516L138.942 18.8V26.668H136.242V14.881H139.9L143.954 23.86L148.098 14.881H151.698V26.668H148.987Z"
-                class="ccustom"
-                fill="#fff"
-              ></path>
-            </svg>
+            <div class="h-full py-4">
+              <img
+                src="https://supersoco.co.uk/wp-content/uploads/2020/12/ss_logo.svg"
+                alt="logo"
+                class="h-full"
+              />
+            </div>
           </div>
         </nav>
-
         <div class="swiper header-swiper" dir="rtl">
           <div class="swiper-wrapper">
             <div class="swiper-slide bg-fixed">
@@ -190,7 +144,7 @@
                 src="https://supersoco.co.uk/wp-content/uploads/2021/06/TC-Max-windfarm-facebook.jpg"
                 alt=""
               />
-            </div> 
+            </div>
             <div class="swiper-slide bg-fixed">
               <img
                 src="https://supersoco.co.uk/wp-content/uploads/2021/08/Super-Soco-banner-1.jpg"
@@ -224,19 +178,43 @@
           </div>
           <!-- <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div> -->
-          <div class="hidden lg:block">
+          <div class="block">
             <div class="swiper-pagination header-swiper-pagination"></div>
           </div>
         </div>
         <div
-          class="absolute bottom-0 right-0 flex h-full w-full items-end justify-center"
+          class="absolute bottom-0 right-0 z-10 flex h-auto w-full flex-row-reverse items-end justify-between"
         >
-          <h1
-            class="sm:text-3.5 lg:text-7.5xl z-10 p-24 text-2xl text-telegram-light text-opacity-80 md:text-5xl"
-            id="header-title"
+          <div
+            dir="ltr"
+            class="text-soco-light-primary flex w-full flex-col px-5 py-5 text-2xl"
           >
-            <!-- ربات کاریابی توران -->
-          </h1>
+            <p
+              class="text-sm font-extrabold tracking-wide sm:text-2xl lg:text-3xl"
+            >
+              LEADING THE ELECTRIC URBAN MOBILITY REVOLUTION
+            </p>
+            <h1
+              class="text-3xl font-extrabold tracking-wider sm:text-7xl lg:text-9xl"
+            >
+              <!-- ربات کاریابی توران -->
+              SUPER SOCO
+            </h1>
+          </div>
+          <div>
+            <button
+              class="mx-11 my-7 inline-flex h-[3.8rem] w-[3.8rem] items-center justify-center bg-soco-red bg-opacity-80 backdrop-blur-xl backdrop-brightness-50"
+              title="scroll-down"
+            >
+              <a
+                ><box-icon
+                  name="down-arrow-alt"
+                  color="#FFF"
+                  size="1.9rem"
+                ></box-icon
+              ></a>
+            </button>
+          </div>
         </div>
       </header>
       <main class="h-auto w-full md:min-h-[100dvh]">
@@ -249,13 +227,13 @@
                 >
                   <div class="w-28">
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png?20220101141644"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/soco_logo.svg/512px-soco_logo.svg.png?20220101141644"
                       alt=""
                       class="h-auto w-full"
                     />
                   </div>
                   <div>
-                    <p class="text-telegram-blue-primary">
+                    <p class="text-soco-red">
                       یه ربات تلگرامی ساخت برنامه نویسان ایران برای کارجویان
                       ایران
                     </p>
@@ -267,9 +245,7 @@
                   class="text-md flex h-full w-full items-center justify-center gap-5 p-10 pb-10 text-justify sm:text-3xl"
                 >
                   <div class="my-auto">
-                    <p class="text-telegram-blue-primary">
-                      😎 با ما کار و باتت به راهه !
-                    </p>
+                    <p class="text-soco-red">😎 با ما کار و باتت به راهه !</p>
                   </div>
                 </div>
               </div>
@@ -278,7 +254,7 @@
                   class="text-md flex h-full w-full items-center justify-center gap-5 p-10 pb-10 text-justify sm:text-3xl"
                 >
                   <div>
-                    <p class="text-telegram-blue-primary">
+                    <p class="text-soco-red">
                       رباتی برای کارفرمایان و کارجویان
                     </p>
                   </div>
@@ -298,16 +274,16 @@
         <section>
           <div class="grid grid-cols-1 gap-5 px-16 py-20 md:grid-cols-2">
             <div
-              class="group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-telegram-gray duration-300 hover:bg-telegram-blue-primary"
+              class="hover:bg-soco-blue-primary group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-soco-gray duration-300"
             >
               <div class="r flex flex-col gap-10 px-2">
                 <h2
-                  class="text-sm font-bold text-telegram-dark duration-300 group-hover:text-telegram-light md:text-xl"
+                  class="group-hover:text-soco-light-primary text-sm font-bold text-soco-dark duration-300 md:text-xl"
                 >
                   نشانی شرکت
                 </h2>
                 <h4
-                  class="text-[10px] text-telegram-light duration-300 group-hover:text-telegram-dark md:text-xs"
+                  class="text-soco-light-primary text-[10px] duration-300 group-hover:text-soco-dark md:text-xs"
                 >
                   تهران خیابان آزادی ...
                 </h4>
@@ -321,16 +297,16 @@
               </div>
             </div>
             <div
-              class="group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-telegram-gray duration-300 hover:bg-telegram-blue-primary"
+              class="hover:bg-soco-blue-primary group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-soco-gray duration-300"
             >
               <div class="r flex flex-col gap-10 px-2">
                 <h2
-                  class="text-sm font-bold text-telegram-dark duration-300 group-hover:text-telegram-light md:text-xl"
+                  class="group-hover:text-soco-light-primary text-sm font-bold text-soco-dark duration-300 md:text-xl"
                 >
                   نشانی شرکت
                 </h2>
                 <h4
-                  class="text-[10px] text-telegram-light duration-300 group-hover:text-telegram-dark md:text-xs"
+                  class="text-soco-light-primary text-[10px] duration-300 group-hover:text-soco-dark md:text-xs"
                 >
                   تهران خیابان آزادی ...
                 </h4>
@@ -344,16 +320,16 @@
               </div>
             </div>
             <div
-              class="group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-telegram-gray duration-300 hover:bg-telegram-blue-primary"
+              class="hover:bg-soco-blue-primary group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-soco-gray duration-300"
             >
               <div class="r flex flex-col gap-10 px-2">
                 <h2
-                  class="text-sm font-bold text-telegram-dark duration-300 group-hover:text-telegram-light md:text-xl"
+                  class="group-hover:text-soco-light-primary text-sm font-bold text-soco-dark duration-300 md:text-xl"
                 >
                   نشانی شرکت
                 </h2>
                 <h4
-                  class="text-[10px] text-telegram-light duration-300 group-hover:text-telegram-dark md:text-xs"
+                  class="text-soco-light-primary text-[10px] duration-300 group-hover:text-soco-dark md:text-xs"
                 >
                   تهران خیابان آزادی ...
                 </h4>
@@ -367,16 +343,16 @@
               </div>
             </div>
             <div
-              class="group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-telegram-gray duration-300 hover:bg-telegram-blue-primary"
+              class="hover:bg-soco-blue-primary group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-soco-gray duration-300"
             >
               <div class="r flex flex-col gap-10 px-2">
                 <h2
-                  class="text-sm font-bold text-telegram-dark duration-300 group-hover:text-telegram-light md:text-xl"
+                  class="group-hover:text-soco-light-primary text-sm font-bold text-soco-dark duration-300 md:text-xl"
                 >
                   نشانی شرکت
                 </h2>
                 <h4
-                  class="text-[10px] text-telegram-light duration-300 group-hover:text-telegram-dark md:text-xs"
+                  class="text-soco-light-primary text-[10px] duration-300 group-hover:text-soco-dark md:text-xs"
                 >
                   تهران خیابان آزادی ...
                 </h4>
@@ -390,16 +366,16 @@
               </div>
             </div>
             <div
-              class="group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-telegram-gray duration-300 hover:bg-telegram-blue-primary"
+              class="hover:bg-soco-blue-primary group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-soco-gray duration-300"
             >
               <div class="r flex flex-col gap-10 px-2">
                 <h2
-                  class="text-sm font-bold text-telegram-dark duration-300 group-hover:text-telegram-light md:text-xl"
+                  class="group-hover:text-soco-light-primary text-sm font-bold text-soco-dark duration-300 md:text-xl"
                 >
                   نشانی شرکت
                 </h2>
                 <h4
-                  class="text-[10px] text-telegram-light duration-300 group-hover:text-telegram-dark md:text-xs"
+                  class="text-soco-light-primary text-[10px] duration-300 group-hover:text-soco-dark md:text-xs"
                 >
                   تهران خیابان آزادی ...
                 </h4>
@@ -413,16 +389,16 @@
               </div>
             </div>
             <div
-              class="group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-telegram-gray duration-300 hover:bg-telegram-blue-primary"
+              class="hover:bg-soco-blue-primary group flex cursor-pointer items-center justify-between overflow-hidden rounded-lg bg-soco-gray duration-300"
             >
               <div class="r flex flex-col gap-10 px-2">
                 <h2
-                  class="text-sm font-bold text-telegram-dark duration-300 group-hover:text-telegram-light md:text-xl"
+                  class="group-hover:text-soco-light-primary text-sm font-bold text-soco-dark duration-300 md:text-xl"
                 >
                   نشانی شرکت
                 </h2>
                 <h4
-                  class="text-[10px] text-telegram-light duration-300 group-hover:text-telegram-dark md:text-xs"
+                  class="text-soco-light-primary text-[10px] duration-300 group-hover:text-soco-dark md:text-xs"
                 >
                   تهران خیابان آزادی ...
                 </h4>
@@ -443,12 +419,12 @@
           <div class=" ">
             <div class="top flex justify-center gap-7 py-3">
               <button
-                class="reviews cursor-pointer rounded-md bg-telegram-light px-6 py-1 text-2xl text-telegram-dark shadow-lg ring-1 ring-telegram-blue-secondary duration-300 hover:bg-telegram-dark hover:text-telegram-blue-secondary"
+                class="reviews ring-soco-blue-secondary bg-soco-light-primary cursor-pointer rounded-md px-6 py-1 text-2xl text-soco-dark shadow-lg ring-1 duration-300 hover:bg-soco-dark hover:text-soco-red"
               >
                 برسی ها
               </button>
               <button
-                class="news cursor-pointer rounded-md bg-telegram-light px-6 py-1 text-2xl text-telegram-dark shadow-lg ring-1 ring-telegram-blue-secondary duration-300 hover:bg-telegram-dark hover:text-telegram-blue-secondary"
+                class="news ring-soco-blue-secondary bg-soco-light-primary cursor-pointer rounded-md px-6 py-1 text-2xl text-soco-dark shadow-lg ring-1 duration-300 hover:bg-soco-dark hover:text-soco-red"
               >
                 اخبار
               </button>
@@ -457,7 +433,7 @@
             <!-- news -->
             <div class="boxnews grid grid-cols-1 gap-5 px-16 md:grid-cols-2">
               <div
-                class="mid mt-5 bg-telegram-light px-5 shadow-lg shadow-telegram-blue-primary"
+                class="mid shadow-soco-blue-primary bg-soco-light-primary mt-5 px-5 shadow-lg"
               >
                 <div class="overflow-hidden">
                   <img
@@ -467,14 +443,14 @@
                   />
                 </div>
                 <div class="px-6 py-3">
-                  <h2 class="text-2xl text-telegram-dark">
+                  <h2 class="text-2xl text-soco-dark">
                     ویژگی جدیدی به ربات ما اضافه شد
                   </h2>
-                  <h2 class="text-lg text-telegram-blue-primary">23/08/2023</h2>
+                  <h2 class="text-lg text-soco-red">23/08/2023</h2>
                 </div>
               </div>
               <div
-                class="mid mt-5 bg-telegram-light px-5 shadow-lg shadow-telegram-blue-primary"
+                class="mid shadow-soco-blue-primary bg-soco-light-primary mt-5 px-5 shadow-lg"
               >
                 <div class="overflow-hidden">
                   <img
@@ -484,10 +460,10 @@
                   />
                 </div>
                 <div class="px-6 py-3">
-                  <h2 class="text-2xl text-telegram-dark">
+                  <h2 class="text-2xl text-soco-dark">
                     ویژگی جدیدی به ربات ما اضافه شد
                   </h2>
-                  <h2 class="text-lg text-telegram-blue-primary">23/08/2023</h2>
+                  <h2 class="text-lg text-soco-red">23/08/2023</h2>
                 </div>
               </div>
             </div>
@@ -495,7 +471,7 @@
             <!-- reviews -->
             <div class="boxreviews grid grid-cols-1 gap-5 md:grid-cols-2">
               <div
-                class="mid mt-5 bg-telegram-light px-5 shadow-lg shadow-telegram-blue-primary"
+                class="mid shadow-soco-blue-primary bg-soco-light-primary mt-5 px-5 shadow-lg"
               >
                 <div class="overflow-hidden">
                   <img
@@ -505,14 +481,14 @@
                   />
                 </div>
                 <div class="px-6 py-3">
-                  <h2 class="text-2xl text-telegram-dark">
+                  <h2 class="text-2xl text-soco-dark">
                     ویژگی جدیدی به ربات ما اضافه شد
                   </h2>
-                  <h2 class="text-lg text-telegram-blue-primary">23/08/2023</h2>
+                  <h2 class="text-lg text-soco-red">23/08/2023</h2>
                 </div>
               </div>
               <div
-                class="mid mt-5 bg-telegram-light px-5 shadow-lg shadow-telegram-blue-primary"
+                class="mid shadow-soco-blue-primary bg-soco-light-primary mt-5 px-5 shadow-lg"
               >
                 <div class="overflow-hidden">
                   <img
@@ -522,10 +498,10 @@
                   />
                 </div>
                 <div class="px-6 py-3">
-                  <h2 class="text-2xl text-telegram-dark">
+                  <h2 class="text-2xl text-soco-dark">
                     ویژگی جدیدی به ربات ما اضافه شد
                   </h2>
-                  <h2 class="text-lg text-telegram-blue-primary">23/08/2023</h2>
+                  <h2 class="text-lg text-soco-red">23/08/2023</h2>
                 </div>
               </div>
             </div>
@@ -536,49 +512,39 @@
       </main>
       <footer>
         <div
-          class="mt-20 flex flex-col items-center justify-center text-center gap-10 bg-telegram-gray px-20 py-20"
+          class="mt-20 flex flex-col items-center justify-center gap-10 bg-soco-gray px-20 py-20 text-center"
         >
-          <div><img src="./images/footer/telegram.png" alt="" /></div>
+          <div><img src="./images/footer/soco.png" alt="" /></div>
           <div
-            class="flex flex-wrap justify-center text-sm md:text-base gap-7 text-telegram-light"
+            class="text-soco-light-primary flex flex-wrap justify-center gap-7 text-sm md:text-base"
           >
-            <a class="duration-300 hover:text-telegram-blue-primary" href=""
+            <a class="duration-300 hover:text-soco-red" href=""
               >Privacy Policy</a
             >
-            <a class="duration-300 hover:text-telegram-blue-primary" href=""
+            <a class="duration-300 hover:text-soco-red" href=""
               >Acceptable Use Policy</a
             >
-            <a class="duration-300 hover:text-telegram-blue-primary" href=""
-              >Site Map</a
-            >
-            <a class="duration-300 hover:text-telegram-blue-primary" href=""
-              >Warranty</a
-            >
-            <a class="duration-300 hover:text-telegram-blue-primary" href=""
+            <a class="duration-300 hover:text-soco-red" href="">Site Map</a>
+            <a class="duration-300 hover:text-soco-red" href="">Warranty</a>
+            <a class="duration-300 hover:text-soco-red" href=""
               >Purchase terms and conditions</a
             >
-            <a class="duration-300 hover:text-telegram-blue-primary" href=""
+            <a class="duration-300 hover:text-soco-red" href=""
               >Super Soco Dealer Site</a
             >
           </div>
-          <div class="icon flex gap-3 text-2xl text-telegram-light">
-            <div
-              class="cursor-pointer duration-300 hover:text-telegram-blue-primary"
-            >
-              <i class="bi bi-telegram"></i>
+          <div class="icon text-soco-light-primary flex gap-3 text-2xl">
+            <div class="cursor-pointer duration-300 hover:text-soco-red">
+              <i class="bi bi-soco"></i>
             </div>
-            <div
-              class="cursor-pointer duration-300 hover:text-telegram-blue-primary"
-            >
+            <div class="cursor-pointer duration-300 hover:text-soco-red">
               <i class="bi bi-twitter"></i>
             </div>
-            <div
-              class="cursor-pointer duration-300 hover:text-telegram-blue-primary"
-            >
+            <div class="cursor-pointer duration-300 hover:text-soco-red">
               <i class="bi bi-instagram"></i>
             </div>
           </div>
-          <div class="copy font-bold text-telegram-dark text-xs md:text-sm">
+          <div class="copy text-xs font-bold text-soco-dark md:text-sm">
             <p>© تمامی حق و حقوق این سایت و ربات محفوظ میباشد</p>
           </div>
         </div>
@@ -589,118 +555,62 @@
       <!-- nav menu for small screens -->
       <div
         id="mobile-menu"
-        class="mobile-menu-anime fixed right-0 top-0 z-50 hidden h-[100dvh] w-[310px] sm:w-[330px] bg-telegram-dark p-[10px] text-telegram-blue-secondary md:hidden"
+        class="mobile-menu-anime fixed right-0 top-0 z-50 hidden h-[100dvh] w-[310px] bg-soco-dark p-[10px] text-soco-red sm:w-[330px] md:hidden"
       >
         <div>
           <button id="close-menu-button" title="بستن" type="button">
-            <box-icon name="x" size="2.5rem" color="#0088CC"></box-icon>
+            <box-icon name="x" size="2.5rem" color="#FFF"></box-icon>
           </button>
         </div>
         <nav class="flex h-full flex-col justify-between p-5 pb-16">
           <!--section anchors will be add in a elemnts and in href att-->
-          <ul class="flex flex-col gap-2.5 font-semibold">
+          <ul
+            class="text-soco-light-primary flex flex-col gap-2.5 text-2xl font-semibold"
+          >
             <li>
               <a
-                class="inline-flex h-full items-center hover:text-telegram-light hover:-translate-x-1 active:text-telegram-light transition-all"
+                class="inline-flex h-full items-center transition-all hover:-translate-x-1 hover:text-soco-gray active:text-soco-gray"
                 href="#"
-                >توران جاب چیست ؟
+                >Contact
               </a>
             </li>
             <li>
               <a
-                class="inline-flex h-full items-center hover:text-telegram-light hover:-translate-x-1 active:text-telegram-light transition-all"
+                class="inline-flex h-full items-center transition-all hover:-translate-x-1 hover:text-soco-gray active:text-soco-gray"
                 href="#"
-                >امکانات</a
+                >FAQs</a
               >
             </li>
             <!--this link is for section how to use bot -->
             <li>
               <a
-                class="inline-flex h-full items-center hover:text-telegram-light hover:-translate-x-1 active:text-telegram-light transition-all"
+                class="inline-flex h-full items-center transition-all hover:-translate-x-1 hover:text-soco-gray active:text-soco-gray"
                 href="#"
-                >شروع کنید</a
+                >Offers</a
               >
             </li>
             <li>
               <a
-                class="inline-flex h-full items-center hover:text-telegram-light hover:-translate-x-1 active:text-telegram-light transition-all"
+                class="inline-flex h-full items-center transition-all hover:-translate-x-1 hover:text-soco-gray active:text-soco-gray"
                 href="#"
-                >اسپانسرها</a
+                >Dealders</a
               >
             </li>
             <li>
               <a
-                class="inline-flex h-full items-center hover:text-telegram-light hover:-translate-x-1 active:text-telegram-light transition-all"
+                class="inline-flex h-full items-center transition-all hover:-translate-x-1 hover:text-soco-gray active:text-soco-gray"
                 href="#"
-                >مدیریت و توسعه دهندگان</a
-              >
-            </li>
-            <li>
-              <a
-                class="inline-flex h-full items-center hover:text-telegram-light hover:-translate-x-1 active:text-telegram-light transition-all"
-                href="#"
-                >درباره ی مدیریت</a
-              >
-            </li>
-            <li>
-              <a
-                class="inline-flex h-full items-center hover:text-telegram-light hover:-translate-x-1 active:text-telegram-light transition-all"
-                href="#"
-                >تماس باما</a
+                >Range</a
               >
             </li>
           </ul>
-          <svg
-            id="logo-10"
-            width="163"
-            height="42"
-            viewBox="0 0 163 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M30.21 17.719C33.348 17.719 34.054 19.082 34.054 20.782C34.054 22.584 33.2 23.875 30.223 23.875C27.265 23.875 26.41 22.659 26.41 20.782C26.41 18.935 27.342 17.719 30.21 17.719Z"
-              class="ccustom"
-              fill="#fff"
-            ></path>
-            <path
-              d="M63.004 17.719C66.142 17.719 66.848 19.082 66.848 20.782C66.848 22.584 65.993 23.875 63.017 23.875C60.06 23.875 59.204 22.659 59.204 20.782C59.204 18.935 60.136 17.719 63.004 17.719Z"
-              class="ccustom"
-              fill="#fff"
-            ></path>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M2.42676 38.5V3.047H161.005V38.5H2.42676ZM78.0048 36.5H159.005V5.047H78.0048V36.5ZM30.225 26.893C35.796 26.893 38.138 24.49 38.138 20.737C38.138 16.923 35.5 14.656 30.225 14.656C25.031 14.656 22.297 17.118 22.297 20.737C22.297 24.821 25.165 26.893 30.225 26.893ZM10.856 14.926V26.713H22.1V23.574H14.924V14.926H10.856ZM50.722 26.713L50.617 25.571C49.2561 26.5422 47.5997 27.0096 45.932 26.893C43.425 26.893 41.337 26.142 40.166 24.626C39.3936 23.5192 39.0036 22.1906 39.055 20.842C39.0111 19.5217 39.4146 18.2253 40.2 17.163C41.385 15.692 43.533 14.716 46.731 14.716C50.41 14.716 52.572 15.842 53.502 17.734C53.7016 18.1796 53.8189 18.6576 53.848 19.145H49.956C49.8579 18.8488 49.6754 18.5878 49.431 18.394C48.6557 17.88 47.7299 17.6423 46.803 17.719C46.2593 17.6531 45.7077 17.7033 45.1849 17.8664C44.6621 18.0295 44.1798 18.3017 43.77 18.665C43.3046 19.302 43.0861 20.0862 43.155 20.872C43.101 21.6217 43.3019 22.3677 43.725 22.989C44.1385 23.3743 44.6301 23.6661 45.1663 23.8449C45.7026 24.0236 46.2709 24.0851 46.833 24.025C47.9493 24.1158 49.0576 23.7715 49.926 23.064C50.1125 22.8308 50.2411 22.5566 50.301 22.264H46.113V19.731H53.95V26.713H50.722ZM63.019 26.893C68.589 26.893 70.932 24.49 70.932 20.737C70.932 16.923 68.2899 14.656 63.019 14.656C57.825 14.656 55.091 17.118 55.091 20.737C55.091 24.821 57.959 26.893 63.019 26.893Z"
-              class="ccustom"
-              fill="#fff"
-            ></path>
-            <path
-              d="M84.857 26.668V14.881H87.757V26.668H84.857Z"
-              class="ccustom"
-              fill="#fff"
-            ></path>
-            <path
-              d="M102.649 21.743C101.914 22.704 100.649 23.143 98.866 23.154C98.49 23.154 93.505 23.139 93.505 23.139V26.668H90.667V14.881H98.867C99.5242 14.8115 100.189 14.8812 100.817 15.0855C101.446 15.2899 102.024 15.6243 102.515 16.067C103.163 16.9112 103.478 17.9638 103.401 19.025C103.467 19.9902 103.202 20.9491 102.649 21.743ZM100.322 17.9C100.022 17.45 99.375 17.2 98.28 17.2H93.49V20.788H98.249C99.42 20.788 100.037 20.548 100.322 20.082C100.491 19.7537 100.564 19.384 100.532 19.016C100.557 18.6322 100.485 18.2483 100.322 17.9Z"
-              class="ccustom"
-              fill="#fff"
-            ></path>
-            <path
-              d="M111.764 26.848C106.418 26.848 104.782 24.848 104.782 22.869H107.815C107.815 23.845 109.151 24.581 111.899 24.581C114.631 24.581 115.352 24.1 115.352 23.319C115.352 22.448 114.812 22.178 112.274 21.893C111.774 21.848 110.413 21.683 109.902 21.608C106.302 21.202 104.916 20.136 104.916 18.229C104.916 16.217 106.944 14.701 111.343 14.701C116.118 14.701 117.95 16.578 117.95 18.53H114.95C114.95 17.539 113.824 16.968 111.166 16.968C108.433 16.968 107.848 17.343 107.848 18.079C107.848 18.845 108.448 19.085 111.348 19.43C112.009 19.521 113.48 19.686 113.885 19.73C116.949 20.045 118.33 21.156 118.33 23.123C118.325 25.466 116.223 26.848 111.764 26.848Z"
-              class="ccustom"
-              fill="#fff"
-            ></path>
-            <path
-              d="M126.87 26.833C122.952 26.833 120.399 25.286 120.399 22.033V14.881H123.266V22.073C123.266 23.56 124.483 24.55 126.99 24.55C129.257 24.55 130.609 23.62 130.609 22.073V14.881H133.447V22.3C133.447 25.257 131.074 26.833 126.87 26.833Z"
-              class="ccustom"
-              fill="#fff"
-            ></path>
-            <path
-              d="M148.987 26.668V18.8L145.308 26.668H142.516L138.942 18.8V26.668H136.242V14.881H139.9L143.954 23.86L148.098 14.881H151.698V26.668H148.987Z"
-              class="ccustom"
-              fill="#fff"
-            ></path>
-          </svg>
+          <div class="mx-auto w-40 p-2">
+            <img
+              src="https://supersoco.co.uk/wp-content/uploads/2020/12/ss_logo.svg"
+              alt="logo"
+              class="h-full"
+            />
+          </div>
         </nav>
       </div>
     </div>

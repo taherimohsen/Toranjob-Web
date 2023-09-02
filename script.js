@@ -26,21 +26,20 @@ function app() {
   toggleMenu();
 
   // title with typewriter
-  const headerTitle = document.getElementById('header-title');
-  const typewriter = new Typewriter(headerTitle, {
-    loop: true,
-    delay: 75,
-  });
-  typewriter
-    .pauseFor(2000)
-    .pauseFor(300)
-    .typeString('توران جاب')
-    .pauseFor(300)
-    .deleteChars(10)
-    .typeString('ربات تلگرامی کاریابی')
-    .typeString(' ایرانی')
-    .pauseFor(1000)
-    .start();
+  // const headerTitle = document.getElementById('header-title');
+  // const typewriter = new Typewriter(headerTitle, {
+  //   loop: true,
+  //   delay: 75,
+  // });
+  // typewriter
+  //   .pauseFor(2000)
+  //   .typeString('توران جاب')
+  //   .pauseFor(300)
+  //   .deleteChars(10)
+  //   .typeString('ربات تلگرامی کاریابی')
+  //   .typeString(' ایرانی')
+  //   .pauseFor(1000)
+  //   .start();
 
   // AOS is library for fade animations
   AOS.init();
