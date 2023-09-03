@@ -32,7 +32,7 @@
   <body class="relative">
     <!-- start tell us left fixed -->
     <div
-      class="text-soco-light-primary fixed left-1 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-2 rounded-md bg-soco-dark px-2 py-1"
+      class="fixed left-1 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-2 rounded-md bg-soco-dark px-2 py-1 text-soco-light-primary"
     >
       <div class="cursor-pointer duration-300 hover:text-soco-red">
         <i class="bi bi-soco"></i>
@@ -46,13 +46,13 @@
     </div>
     <!-- end tell us left fixed -->
 
-    <div class="mx-auto w-full max-w-[1366px]">
-      <header class="relative h-[100dvh] max-h-[700px] w-full border-b-2">
+    <div class="mx-auto w-full max-w-[1536px]">
+      <header class="relative h-[100dvh] max-h-[864px] w-full border-b-2">
         <!-- nav is fixed on top and has two diffrent contents in wide screen and small screens -->
         <nav class="fixed right-0 top-0 z-20 h-auto w-full">
           <div
             id="navbar-sm"
-            class="mx-auto flex h-10 w-full max-w-[1366px] items-center justify-between bg-soco-dark bg-opacity-40 px-5 backdrop-blur-sm lg:hidden"
+            class="mx-auto flex h-10 w-full max-w-[1536px] items-center justify-between bg-soco-dark bg-opacity-90 px-5 backdrop-blur-sm lg:hidden"
           >
             <button
               type="button"
@@ -72,10 +72,10 @@
           </div>
           <div
             id="navbar-lg"
-            class="mx-auto hidden h-24 w-full max-w-[1366px] items-center justify-between bg-soco-dark bg-opacity-70 p-2.5 px-5 lg:flex"
+            class="mx-auto hidden h-24 w-full max-w-[1536px] items-center justify-between bg-soco-dark bg-opacity-80 p-2.5 px-5 lg:flex"
           >
             <ul
-              class="text-md text-soco-light-primary flex h-full gap-10 px-5 font-semibold"
+              class="text-md flex h-full gap-10 px-5 font-semibold text-soco-light-primary"
             >
               <!--section anchors will be add in a elemnts and in href att-->
               <li>
@@ -187,7 +187,7 @@
         >
           <div
             dir="ltr"
-            class="text-soco-light-primary flex w-full flex-col px-5 py-5 text-2xl"
+            class="flex w-full flex-col px-5 py-5 text-2xl text-soco-light-primary"
           >
             <p
               class="text-sm font-extrabold tracking-wide sm:text-2xl lg:text-3xl"
@@ -206,7 +206,8 @@
               class="mx-11 my-7 inline-flex h-[3.8rem] w-[3.8rem] items-center justify-center bg-soco-red bg-opacity-80 backdrop-blur-xl backdrop-brightness-50"
               title="scroll-down"
             >
-              <a href="#main"><box-icon
+              <a href="#main"
+                ><box-icon
                   name="down-arrow-alt"
                   color="#FFF"
                   size="1.9rem"
@@ -262,7 +263,7 @@
                       </div>
                       <div>
                         <button
-                          class="text-soco-light-primary inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold"
+                          class="inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold text-soco-light-primary"
                         >
                           EXPLORE<box-icon
                             name="right-arrow-alt"
@@ -316,7 +317,7 @@
                       </div>
                       <div>
                         <button
-                          class="text-soco-light-primary inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold"
+                          class="inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold text-soco-light-primary"
                         >
                           EXPLORE<box-icon
                             name="right-arrow-alt"
@@ -370,7 +371,7 @@
                       </div>
                       <div>
                         <button
-                          class="text-soco-light-primary inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold"
+                          class="inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold text-soco-light-primary"
                         >
                           EXPLORE<box-icon
                             name="right-arrow-alt"
@@ -424,7 +425,7 @@
                       </div>
                       <div>
                         <button
-                          class="text-soco-light-primary inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold"
+                          class="inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold text-soco-light-primary"
                         >
                           EXPLORE<box-icon
                             name="right-arrow-alt"
@@ -437,7 +438,9 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination section-swiper-pagination m-1"></div>
+            <div
+              class="swiper-pagination section-swiper-pagination z-10 mb-5"
+            ></div>
           </div>
           <!-- <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div> -->
@@ -448,59 +451,173 @@
 
         <!-- start boxes -->
         <section>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
-            <div class="flex flex-col-reverse  items-center text-center sm:text-end md:text-end  font-semibold px-[30px] py-[15px] sm:flex-row hover:cursor-pointer group">
-              <div class="r t bg-soco-light-secondary duration-300 group-hover:bg-soco-red  px-[30px] py-[45px] flex flex-col gap-2">
-                <h2 class="text-soco-dark text-xl group-hover:text-soco-light-primary duration-300 ">FAQs</h2>
-                <h4 class="text-soco-light-text group-hover:text-soco-light-primary duration-300 ">Find out everything you need to know about owning a Super Soco bike.</h4>
+          <div class="grid grid-cols-1 gap-7 md:grid-cols-2">
+            <div
+              class="group flex flex-col-reverse items-center px-[30px] py-[15px] text-center font-semibold hover:cursor-pointer sm:flex-row sm:text-end md:text-end"
+            >
+              <div
+                class="r t flex flex-col gap-2 bg-soco-light-secondary px-[30px] py-[45px] duration-300 group-hover:bg-soco-red"
+              >
+                <h2
+                  class="text-xl text-soco-dark duration-300 group-hover:text-soco-light-primary"
+                >
+                  FAQs
+                </h2>
+                <h4
+                  class="text-soco-light-text duration-300 group-hover:text-soco-light-primary"
+                >
+                  Find out everything you need to know about owning a Super Soco
+                  bike.
+                </h4>
               </div>
-              <div class="l d sm:relative sm:w-1/3 sm:h-[172px] md:w-full md:h-[220px] lg:h-[197px] overflow-hidden ">
-                <img class="w-full sm:h-full sm:absolute group-hover:scale-125 duration-300 " src="./images/boxes/m1.jpg" alt="">
-              </div>
-            </div>
-            <div class="flex flex-col-reverse  items-center text-center sm:text-end md:text-end  font-semibold px-[30px] py-[15px] sm:flex-row hover:cursor-pointer group">
-              <div class="r t bg-soco-light-secondary duration-300 group-hover:bg-soco-red  px-[30px] py-[45px] flex flex-col gap-2">
-                <h2 class="text-soco-dark text-xl group-hover:text-soco-light-primary duration-300 ">FIND A DEALER</h2>
-                <h4 class="text-soco-light-text group-hover:text-soco-light-primary duration-300 ">We stock our bikes exclusively through a vast dealer network – browse the map here.</h4>
-              </div>
-              <div class="l d sm:relative sm:w-1/3 sm:h-[172px] md:w-full md:h-[220px] lg:h-[197px] overflow-hidden ">
-                <img class="w-full sm:h-full sm:absolute group-hover:scale-125 duration-300 " src="./images/boxes/map.png" alt="">
-              </div>
-            </div>
-            <div class="flex flex-col-reverse  items-center text-center sm:text-end md:text-end  font-semibold px-[30px] py-[15px] sm:flex-row hover:cursor-pointer group">
-              <div class="r t bg-soco-light-secondary duration-300 group-hover:bg-soco-red  px-[30px] py-[45px] flex flex-col gap-2">
-                <h2 class="text-soco-dark text-xl group-hover:text-soco-light-primary duration-300 ">Finance and Insurance</h2>
-                <h4 class="text-soco-light-text group-hover:text-soco-light-primary duration-300 ">Super Soco work hard to ensure that you gain the best deals. Find the right company now.</h4>
-              </div>
-              <div class="l d sm:relative sm:w-1/3 sm:h-[172px] md:w-full md:h-[220px] lg:h-[197px] overflow-hidden ">
-                <img class="w-full sm:h-full sm:absolute group-hover:scale-125 duration-300 " src="./images/boxes/m3.jpg" alt="">
-              </div>
-            </div>
-            <div class="flex flex-col-reverse  items-center text-center sm:text-end md:text-end  font-semibold px-[30px] py-[15px] sm:flex-row hover:cursor-pointer group">
-              <div class="r t bg-soco-light-secondary duration-300 group-hover:bg-soco-red  px-[30px] py-[45px] flex flex-col gap-2">
-                <h2 class="text-soco-dark text-xl group-hover:text-soco-light-primary duration-300 ">Getting Started</h2>
-                <h4 class="text-soco-light-text group-hover:text-soco-light-primary duration-300 ">Find out how you can get started on your route to electric freedom</h4>
-              </div>
-              <div class="l d sm:relative sm:w-1/3 sm:h-[172px] md:w-full md:h-[220px] lg:h-[197px] overflow-hidden ">
-                <img class="w-full sm:h-full sm:absolute group-hover:scale-125 duration-300 " src="./images/boxes/m2.jpg" alt="">
+              <div
+                class="l d overflow-hidden sm:relative sm:h-[172px] sm:w-1/3 md:h-[220px] md:w-full lg:h-[197px]"
+              >
+                <img
+                  class="w-full duration-300 group-hover:scale-125 sm:absolute sm:h-full"
+                  src="./images/boxes/m1.jpg"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col-reverse  items-center text-center sm:text-end md:text-end  font-semibold px-[30px] py-[15px] sm:flex-row hover:cursor-pointer group">
-              <div class="r t bg-soco-light-secondary duration-300 group-hover:bg-soco-red  px-[30px] py-[45px] flex flex-col gap-2">
-                <h2 class="text-soco-dark text-xl group-hover:text-soco-light-primary duration-300 ">Offers</h2>
-                <h4 class="text-soco-light-text group-hover:text-soco-light-primary duration-300 ">Check out our featured offers to help shortcut your route to electric</h4>
+            <div
+              class="group flex flex-col-reverse items-center px-[30px] py-[15px] text-center font-semibold hover:cursor-pointer sm:flex-row sm:text-end md:text-end"
+            >
+              <div
+                class="r t flex flex-col gap-2 bg-soco-light-secondary px-[30px] py-[45px] duration-300 group-hover:bg-soco-red"
+              >
+                <h2
+                  class="text-xl text-soco-dark duration-300 group-hover:text-soco-light-primary"
+                >
+                  FIND A DEALER
+                </h2>
+                <h4
+                  class="text-soco-light-text duration-300 group-hover:text-soco-light-primary"
+                >
+                  We stock our bikes exclusively through a vast dealer network –
+                  browse the map here.
+                </h4>
               </div>
-              <div class="l d sm:relative sm:w-1/3 sm:h-[172px] md:w-full md:h-[220px] lg:h-[197px] overflow-hidden ">
-                <img class="w-full sm:h-full sm:absolute group-hover:scale-125 duration-300 " src="./images/boxes/m1.jpg" alt="">
+              <div
+                class="l d overflow-hidden sm:relative sm:h-[172px] sm:w-1/3 md:h-[220px] md:w-full lg:h-[197px]"
+              >
+                <img
+                  class="w-full duration-300 group-hover:scale-125 sm:absolute sm:h-full"
+                  src="./images/boxes/map.png"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="flex flex-col-reverse  items-center text-center sm:text-end md:text-end  font-semibold px-[30px] py-[15px] sm:flex-row hover:cursor-pointer group">
-              <div class="r t bg-soco-light-secondary duration-300 group-hover:bg-soco-red  px-[30px] py-[45px] flex flex-col gap-2">
-                <h2 class="text-soco-dark text-xl group-hover:text-soco-light-primary duration-300 ">CO2 Calculator</h2>
-                <h4 class="text-soco-light-text group-hover:text-soco-light-primary duration-300 ">Find out just how much of an impact switching to electric can have on reducing your carbon footprint</h4>
+            <div
+              class="group flex flex-col-reverse items-center px-[30px] py-[15px] text-center font-semibold hover:cursor-pointer sm:flex-row sm:text-end md:text-end"
+            >
+              <div
+                class="r t flex flex-col gap-2 bg-soco-light-secondary px-[30px] py-[45px] duration-300 group-hover:bg-soco-red"
+              >
+                <h2
+                  class="text-xl text-soco-dark duration-300 group-hover:text-soco-light-primary"
+                >
+                  Finance and Insurance
+                </h2>
+                <h4
+                  class="text-soco-light-text duration-300 group-hover:text-soco-light-primary"
+                >
+                  Super Soco work hard to ensure that you gain the best deals.
+                  Find the right company now.
+                </h4>
               </div>
-              <div class="l d sm:relative sm:w-1/3 sm:h-[172px] md:w-full md:h-[220px] lg:h-[197px] overflow-hidden ">
-                <img class="w-full sm:h-full sm:absolute group-hover:scale-125 duration-300 " src="./images/boxes/m4.png" alt="">
+              <div
+                class="l d overflow-hidden sm:relative sm:h-[172px] sm:w-1/3 md:h-[220px] md:w-full lg:h-[197px]"
+              >
+                <img
+                  class="w-full duration-300 group-hover:scale-125 sm:absolute sm:h-full"
+                  src="./images/boxes/m3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="group flex flex-col-reverse items-center px-[30px] py-[15px] text-center font-semibold hover:cursor-pointer sm:flex-row sm:text-end md:text-end"
+            >
+              <div
+                class="r t flex flex-col gap-2 bg-soco-light-secondary px-[30px] py-[45px] duration-300 group-hover:bg-soco-red"
+              >
+                <h2
+                  class="text-xl text-soco-dark duration-300 group-hover:text-soco-light-primary"
+                >
+                  Getting Started
+                </h2>
+                <h4
+                  class="text-soco-light-text duration-300 group-hover:text-soco-light-primary"
+                >
+                  Find out how you can get started on your route to electric
+                  freedom
+                </h4>
+              </div>
+              <div
+                class="l d overflow-hidden sm:relative sm:h-[172px] sm:w-1/3 md:h-[220px] md:w-full lg:h-[197px]"
+              >
+                <img
+                  class="w-full duration-300 group-hover:scale-125 sm:absolute sm:h-full"
+                  src="./images/boxes/m2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="group flex flex-col-reverse items-center px-[30px] py-[15px] text-center font-semibold hover:cursor-pointer sm:flex-row sm:text-end md:text-end"
+            >
+              <div
+                class="r t flex flex-col gap-2 bg-soco-light-secondary px-[30px] py-[45px] duration-300 group-hover:bg-soco-red"
+              >
+                <h2
+                  class="text-xl text-soco-dark duration-300 group-hover:text-soco-light-primary"
+                >
+                  Offers
+                </h2>
+                <h4
+                  class="text-soco-light-text duration-300 group-hover:text-soco-light-primary"
+                >
+                  Check out our featured offers to help shortcut your route to
+                  electric
+                </h4>
+              </div>
+              <div
+                class="l d overflow-hidden sm:relative sm:h-[172px] sm:w-1/3 md:h-[220px] md:w-full lg:h-[197px]"
+              >
+                <img
+                  class="w-full duration-300 group-hover:scale-125 sm:absolute sm:h-full"
+                  src="./images/boxes/m1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="group flex flex-col-reverse items-center px-[30px] py-[15px] text-center font-semibold hover:cursor-pointer sm:flex-row sm:text-end md:text-end"
+            >
+              <div
+                class="r t flex flex-col gap-2 bg-soco-light-secondary px-[30px] py-[45px] duration-300 group-hover:bg-soco-red"
+              >
+                <h2
+                  class="text-xl text-soco-dark duration-300 group-hover:text-soco-light-primary"
+                >
+                  CO2 Calculator
+                </h2>
+                <h4
+                  class="text-soco-light-text duration-300 group-hover:text-soco-light-primary"
+                >
+                  Find out just how much of an impact switching to electric can
+                  have on reducing your carbon footprint
+                </h4>
+              </div>
+              <div
+                class="l d overflow-hidden sm:relative sm:h-[172px] sm:w-1/3 md:h-[220px] md:w-full lg:h-[197px]"
+              >
+                <img
+                  class="w-full duration-300 group-hover:scale-125 sm:absolute sm:h-full"
+                  src="./images/boxes/m4.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -513,8 +630,7 @@
               <button
                 class="reviews ring-soco-blue-secondary bg-soco-light-primary cursor-pointer rounded-md px-6 py-1 text-2xl text-soco-dark shadow-lg duration-300 hover:bg-soco-dark hover:text-soco-red"
               >
-                 
-REVIEWS
+                REVIEWS
               </button>
               <button
                 class="news ring-soco-blue-secondary bg-soco-light-primary cursor-pointer rounded-md px-6 py-1 text-2xl text-soco-dark shadow-lg duration-300 hover:bg-soco-dark hover:text-soco-red"
@@ -524,9 +640,11 @@ REVIEWS
             </div>
 
             <!-- news -->
-            <div class="boxnews text-end grid grid-cols-1 gap-5 px-16 md:grid-cols-2">
+            <div
+              class="boxnews grid grid-cols-1 gap-5 px-16 text-end md:grid-cols-2"
+            >
               <div
-                class="mid shadow-soco-blue-primary bg-soco-light-primary mt-5 px-5 shadow-lg"
+                class="mid shadow-soco-blue-primary mt-5 bg-soco-light-primary px-5 shadow-lg"
               >
                 <div class="overflow-hidden">
                   <img
@@ -535,15 +653,19 @@ REVIEWS
                     alt=""
                   />
                 </div>
-                <div class="px-6 py-3 flex flex-col gap-5">
-                  <h2 class="text-xl font-semibold text-soco-dark cursor-pointer hover:text-soco-red">
-                    AUTO-TRAIL OWNERS CLUB 30TH ANNIVERSARY CELEBRATIONS RAISE FUNDS FOR THE THAMES VALLEY AIR AMBULANCE CHARITY WITH AN ELECTRIC CUX RAFFLE
+                <div class="flex flex-col gap-5 px-6 py-3">
+                  <h2
+                    class="cursor-pointer text-xl font-semibold text-soco-dark hover:text-soco-red"
+                  >
+                    AUTO-TRAIL OWNERS CLUB 30TH ANNIVERSARY CELEBRATIONS RAISE
+                    FUNDS FOR THE THAMES VALLEY AIR AMBULANCE CHARITY WITH AN
+                    ELECTRIC CUX RAFFLE
                   </h2>
                   <h2 class="text-lg text-soco-red">23/08/2023</h2>
                 </div>
               </div>
               <div
-                class="mid shadow-soco-blue-primary bg-soco-light-primary mt-5 px-5 shadow-lg"
+                class="mid shadow-soco-blue-primary mt-5 bg-soco-light-primary px-5 shadow-lg"
               >
                 <div class="overflow-hidden">
                   <img
@@ -552,9 +674,12 @@ REVIEWS
                     alt=""
                   />
                 </div>
-                <div class="px-6 py-3 flex flex-col gap-5">
-                  <h2 class="text-xl font-semibold text-soco-dark cursor-pointer hover:text-soco-red">
-                    SUPER SOCO TC MAX WINS URBAN ELECTRIC BIKE OF THE YEAR IN THE MCN AWARDS
+                <div class="flex flex-col gap-5 px-6 py-3">
+                  <h2
+                    class="cursor-pointer text-xl font-semibold text-soco-dark hover:text-soco-red"
+                  >
+                    SUPER SOCO TC MAX WINS URBAN ELECTRIC BIKE OF THE YEAR IN
+                    THE MCN AWARDS
                   </h2>
                   <h2 class="text-lg text-soco-red">23/08/2023</h2>
                 </div>
@@ -562,9 +687,11 @@ REVIEWS
             </div>
 
             <!-- reviews -->
-            <div class="boxreviews text-end grid grid-cols-1 gap-5 md:grid-cols-2">
+            <div
+              class="boxreviews grid grid-cols-1 gap-5 text-end md:grid-cols-2"
+            >
               <div
-                class="mid shadow-soco-blue-primary bg-soco-light-primary mt-5 px-5 shadow-lg"
+                class="mid shadow-soco-blue-primary mt-5 bg-soco-light-primary px-5 shadow-lg"
               >
                 <div class="overflow-hidden">
                   <img
@@ -573,16 +700,21 @@ REVIEWS
                     alt=""
                   />
                 </div>
-                <div class="px-6 py-3 flex flex-col gap-5">
-                  <h2 class="text-xl font-semibold text-soco-dark cursor-pointer hover:text-soco-red">
+                <div class="flex flex-col gap-5 px-6 py-3">
+                  <h2
+                    class="cursor-pointer text-xl font-semibold text-soco-dark hover:text-soco-red"
+                  >
                     SPICY110 CPX REVIEW; “IT’S ACTUALLY KIND OF AMAZING!”
                   </h2>
                   <h2 class="text-lg text-soco-red">23/08/2023</h2>
-                  <h3 class="text-soco-light-text text-xs ">We recently gave Spicy110 a Super Soco CPx for a couple of weeks to find out what it’s like to live with.</h3>
+                  <h3 class="text-soco-light-text text-xs">
+                    We recently gave Spicy110 a Super Soco CPx for a couple of
+                    weeks to find out what it’s like to live with.
+                  </h3>
                 </div>
               </div>
               <div
-                class="mid shadow-soco-blue-primary bg-soco-light-primary mt-5 px-5 shadow-lg"
+                class="mid shadow-soco-blue-primary mt-5 bg-soco-light-primary px-5 shadow-lg"
               >
                 <div class="overflow-hidden">
                   <img
@@ -591,12 +723,19 @@ REVIEWS
                     alt=""
                   />
                 </div>
-                <div class="px-6 py-3 flex flex-col gap-5">
-                  <h2 class="text-xl font-semibold text-soco-dark cursor-pointer hover:text-soco-red">
-                    DEVITT TC MAX REVIEW; “PERFECT FOR NEGOTIATING THE CITY CENTRE”
+                <div class="flex flex-col gap-5 px-6 py-3">
+                  <h2
+                    class="cursor-pointer text-xl font-semibold text-soco-dark hover:text-soco-red"
+                  >
+                    DEVITT TC MAX REVIEW; “PERFECT FOR NEGOTIATING THE CITY
+                    CENTRE”
                   </h2>
                   <h2 class="text-lg text-soco-red">23/08/2023</h2>
-                  <h3 class="text-soco-light-text text-xs ">It’s a slick, city dwelling machine that carves through traffic with ease and provides an efficient and pocket-friendly commuting option in the long term.”</h3>
+                  <h3 class="text-soco-light-text text-xs">
+                    It’s a slick, city dwelling machine that carves through
+                    traffic with ease and provides an efficient and
+                    pocket-friendly commuting option in the long term.”
+                  </h3>
                 </div>
               </div>
             </div>
@@ -605,14 +744,19 @@ REVIEWS
         </section>
         <!-- end news -->
       </main>
-      <footer class="relative overflow-hidden mt-20" style=" background-image: url(./images/footer/bgfooter.jpg);">
-        <div class="absolute w-[36%] -ring-[30px] -bottom-[30px] opacity-75"><img src="./images/boxes/m4.png" alt=""></div>
+      <footer
+        class="relative mt-20 overflow-hidden"
+        style="background-image: url(./images/footer/bgfooter.jpg)"
+      >
+        <div class="-ring-[30px] absolute -bottom-[30px] w-[36%] opacity-75">
+          <img src="./images/boxes/m4.png" alt="" />
+        </div>
         <div
           class="flex flex-col items-center justify-center gap-10 px-20 py-20 text-center"
         >
           <div><img src="./images/footer/telegram.png" alt="" /></div>
           <div
-            class="z-10 text-soco-light-primary flex flex-wrap justify-center gap-7 text-sm md:text-base"
+            class="z-10 flex flex-wrap justify-center gap-7 text-sm text-soco-light-primary md:text-base"
           >
             <a class="duration-300 hover:text-soco-red" href=""
               >Privacy Policy</a
@@ -629,7 +773,7 @@ REVIEWS
               >Super Soco Dealer Site</a
             >
           </div>
-          <div class="icon text-soco-light-primary flex gap-3 text-2xl">
+          <div class="icon flex gap-3 text-2xl text-soco-light-primary">
             <div class="cursor-pointer duration-300 hover:text-soco-red">
               <i class="bi bi-soco"></i>
             </div>
@@ -640,9 +784,13 @@ REVIEWS
               <i class="bi bi-instagram"></i>
             </div>
           </div>
-          <div class="copy text-xs font-bold md:text-sm flex flex-col gap-4">
-            <p class="text-soco-light-primary">Vmoto Soco UK| All Rights Reserved ©</p>
-            <p class="text-soco-light-text">Web Design Devon | Studio Illicit</p>
+          <div class="copy flex flex-col gap-4 text-xs font-bold md:text-sm">
+            <p class="text-soco-light-primary">
+              Vmoto Soco UK| All Rights Reserved ©
+            </p>
+            <p class="text-soco-light-text">
+              Web Design Devon | Studio Illicit
+            </p>
           </div>
         </div>
       </footer>
@@ -652,7 +800,7 @@ REVIEWS
       <!-- nav menu for small screens -->
       <div
         id="mobile-menu"
-        class="mobile-menu-anime fixed right-0 top-0 z-50 hidden h-[100dvh] w-[310px] bg-soco-dark p-[10px] text-soco-red sm:w-[330px] md:hidden"
+        class="mobile-menu-anime fixed right-0 top-0 z-50 hidden h-[100dvh] w-[310px] bg-soco-dark bg-opacity-90 p-[10px] text-soco-red backdrop-blur-md sm:w-[330px] lg:hidden"
       >
         <div>
           <button id="close-menu-button" title="بستن" type="button">
@@ -662,7 +810,7 @@ REVIEWS
         <nav class="flex h-full flex-col justify-between p-5 pb-16">
           <!--section anchors will be add in a elemnts and in href att-->
           <ul
-            class="text-soco-light-primary flex flex-col gap-2.5 text-2xl font-semibold"
+            class="flex flex-col gap-2.5 text-2xl font-semibold text-soco-light-primary"
           >
             <li>
               <a

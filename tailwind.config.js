@@ -14,8 +14,6 @@ module.exports = {
         "soco-gray":"#CCCCCC",
         "soco-light-primary":"#FFFFFF",
         "soco-light-secondary":"#F4F4F4",
-        "soco-light-text":"#7a7a7a",
-
       },
     },
   },
