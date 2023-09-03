@@ -27,6 +27,9 @@ font-family: 'Noto Sans Arabic', sans-serif; */
 /* font-family: 'Noto Sans Arabic', sans-serif; */
 /*  font-family: 'Noto Nastaliq Urdu', serif; */
 /* font-family: 'PT Sans', sans-serif; */
+html{
+    scroll-behavior: smooth;
+}
 body {
     /* font-family: 'Noto Sans Arabic', sans-serif; */
 font-family: 'PT Sans', sans-serif;
