@@ -38,6 +38,7 @@ html{
 body {
     /* font-family: 'Noto Sans Arabic', sans-serif; */
 font-family: 'PT Sans', sans-serif;
+background-color: var(--soco-light-primary);
 
 }
 
