@@ -17,7 +17,12 @@
     --swiper-pagination-bullet-inactive-color: rgba(0, 0, 0, 0);
     --swiper-pagination-bullet-inactive-opacity: 0.5;
     --swiper-pagination-bullet-opacity: 1;
-
+    /* soco colors */
+    --soco-dark:#333;
+    --soco-red:#D11515;
+    --soco-gray:#CCCCCC;
+    --soco-light-primary:#FFFFFF;
+    --soco-light-secondary:#F3F3F3;
 }
 /* all font-families are here(from google fonts links) */
 /*
@@ -57,7 +62,7 @@ input {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: var(--telegram-light);
+    background: var(--soco-light-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
