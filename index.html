@@ -47,7 +47,7 @@
     <!-- end tell us left fixed -->
 
     <div class="mx-auto w-full max-w-[1366px]">
-      <header class="relative h-[100dvh] w-full border-b-2">
+      <header class="relative h-[100dvh] max-h-[700px] w-full border-b-2">
         <!-- nav is fixed on top and has two diffrent contents in wide screen and small screens -->
         <nav class="fixed right-0 top-0 z-20 h-auto w-full">
           <div
@@ -75,7 +75,7 @@
             class="mx-auto hidden h-24 w-full max-w-[1366px] items-center justify-between bg-soco-dark bg-opacity-70 p-2.5 px-5 lg:flex"
           >
             <ul
-              class="text-md text-soco-light-primary flex h-full gap-10 font-semibold"
+              class="text-md text-soco-light-primary flex h-full gap-10 px-5 font-semibold"
             >
               <!--section anchors will be add in a elemnts and in href att-->
               <li>
@@ -217,26 +217,61 @@
           </div>
         </div>
       </header>
-      <main class="h-auto w-full md:min-h-[100dvh]">
-        <section class="mb-5 flex h-[170px] flex-col">
-          <div class="swiper section-swiper">
+      <main class="h-auto w-full">
+        <section class="mb-5 flex h-auto flex-col">
+          <div class="swiper section-swiper" dir="ltr">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div
-                  class="text-md flex h-full w-full items-center justify-center gap-5 p-10 pb-10 text-justify md:text-2xl"
+                  class="text-md flex h-full w-full items-center justify-center gap-5 p-10 pb-10 text-justify sm:text-3xl"
                 >
-                  <div class="w-28">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/soco_logo.svg/512px-soco_logo.svg.png?20220101141644"
-                      alt=""
-                      class="h-auto w-full"
-                    />
-                  </div>
-                  <div>
-                    <p class="text-soco-red">
-                      یه ربات تلگرامی ساخت برنامه نویسان ایران برای کارجویان
-                      ایران
-                    </p>
+                  <div class="grid w-full grid-cols-1">
+                    <div class="mx-auto">
+                      <img
+                        alt="motor"
+                        class="h-auto w-full max-w-[500px]"
+                        src="https://supersoco.co.uk/wp-content/uploads/2020/12/CPX_featured.png"
+                      />
+                    </div>
+                    <div class="flex flex-col items-end sm:flex-row">
+                      <div class="flex w-full flex-col">
+                        <div class="text-sm font-bold"><p>PRICE</p></div>
+                        <div class="text-sm font-bold">
+                          <p>$3,049 [SINGLE BATTERY], $4,299 DUAL BATTERY</p>
+                        </div>
+                        <div class="grid grid-cols-3 divide-x-2 py-5">
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">MOTOR</h3>
+                            <p class="text-[0.9rem]">
+                              56mph / 90kph Max Speed , 4.8kW Max Power
+                            </p>
+                          </div>
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">BATTERY</h3>
+                            <p class="text-[0.9rem]">
+                              44 Miles / 72km (Single Battery) Estimated Rang ,
+                              60v 45 Ah Per Battery (2.7kWh) Battery Capacity
+                            </p>
+                          </div>
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">LICENSE</h3>
+                            <p class="text-[0.9rem]">
+                              A1 - CBT from 17 years old (125cc equivalent)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <button
+                          class="text-soco-light-primary inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold"
+                        >
+                          EXPLORE<box-icon
+                            name="right-arrow-alt"
+                            color="#ffffff"
+                          ></box-icon>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -244,8 +279,53 @@
                 <div
                   class="text-md flex h-full w-full items-center justify-center gap-5 p-10 pb-10 text-justify sm:text-3xl"
                 >
-                  <div class="my-auto">
-                    <p class="text-soco-red">😎 با ما کار و باتت به راهه !</p>
+                  <div class="grid w-full grid-cols-1">
+                    <div class="mx-auto">
+                      <img
+                        alt="motor"
+                        class="h-auto w-full max-w-[500px]"
+                        src="https://supersoco.co.uk/wp-content/uploads/2020/12/TSX_featured-768x534.png"
+                      />
+                    </div>
+                    <div class="flex flex-col items-end sm:flex-row">
+                      <div class="flex w-full flex-col">
+                        <div class="text-sm font-bold"><p>PRICE</p></div>
+                        <div class="text-sm font-bold">
+                          <p>$3,049 [SINGLE BATTERY], $4,299 DUAL BATTERY</p>
+                        </div>
+                        <div class="grid grid-cols-3 divide-x-2 py-5">
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">MOTOR</h3>
+                            <p class="text-[0.9rem]">
+                              56mph / 90kph Max Speed , 4.8kW Max Power
+                            </p>
+                          </div>
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">BATTERY</h3>
+                            <p class="text-[0.9rem]">
+                              44 Miles / 72km (Single Battery) Estimated Rang ,
+                              60v 45 Ah Per Battery (2.7kWh) Battery Capacity
+                            </p>
+                          </div>
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">LICENSE</h3>
+                            <p class="text-[0.9rem]">
+                              A1 - CBT from 17 years old (125cc equivalent)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <button
+                          class="text-soco-light-primary inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold"
+                        >
+                          EXPLORE<box-icon
+                            name="right-arrow-alt"
+                            color="#ffffff"
+                          ></box-icon>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -253,15 +333,112 @@
                 <div
                   class="text-md flex h-full w-full items-center justify-center gap-5 p-10 pb-10 text-justify sm:text-3xl"
                 >
-                  <div>
-                    <p class="text-soco-red">
-                      رباتی برای کارفرمایان و کارجویان
-                    </p>
+                  <div class="grid w-full grid-cols-1">
+                    <div class="mx-auto">
+                      <img
+                        alt="motor"
+                        class="h-auto w-full max-w-[500px]"
+                        src="https://supersoco.co.uk/wp-content/uploads/2022/07/Wanderer-cover-1024x713.png"
+                      />
+                    </div>
+                    <div class="flex flex-col items-end sm:flex-row">
+                      <div class="flex w-full flex-col">
+                        <div class="text-sm font-bold"><p>PRICE</p></div>
+                        <div class="text-sm font-bold">
+                          <p>$3,049 [SINGLE BATTERY], $4,299 DUAL BATTERY</p>
+                        </div>
+                        <div class="grid grid-cols-3 divide-x-2 py-5">
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">MOTOR</h3>
+                            <p class="text-[0.9rem]">
+                              56mph / 90kph Max Speed , 4.8kW Max Power
+                            </p>
+                          </div>
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">BATTERY</h3>
+                            <p class="text-[0.9rem]">
+                              44 Miles / 72km (Single Battery) Estimated Rang ,
+                              60v 45 Ah Per Battery (2.7kWh) Battery Capacity
+                            </p>
+                          </div>
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">LICENSE</h3>
+                            <p class="text-[0.9rem]">
+                              A1 - CBT from 17 years old (125cc equivalent)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <button
+                          class="text-soco-light-primary inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold"
+                        >
+                          EXPLORE<box-icon
+                            name="right-arrow-alt"
+                            color="#ffffff"
+                          ></box-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="text-md flex h-full w-full items-center justify-center gap-5 p-10 pb-10 text-justify sm:text-3xl"
+                >
+                  <div class="grid w-full grid-cols-1">
+                    <div class="mx-auto">
+                      <img
+                        alt="motor"
+                        class="h-auto w-full max-w-[500px]"
+                        src="https://supersoco.co.uk/wp-content/uploads/2020/12/TC_featured-768x534.png"
+                      />
+                    </div>
+                    <div class="flex flex-col items-end sm:flex-row">
+                      <div class="flex w-full flex-col">
+                        <div class="text-sm font-bold"><p>PRICE</p></div>
+                        <div class="text-sm font-bold">
+                          <p>$3,049 [SINGLE BATTERY], $4,299 DUAL BATTERY</p>
+                        </div>
+                        <div class="grid grid-cols-3 divide-x-2 py-5">
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">MOTOR</h3>
+                            <p class="text-[0.9rem]">
+                              56mph / 90kph Max Speed , 4.8kW Max Power
+                            </p>
+                          </div>
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">BATTERY</h3>
+                            <p class="text-[0.9rem]">
+                              44 Miles / 72km (Single Battery) Estimated Rang ,
+                              60v 45 Ah Per Battery (2.7kWh) Battery Capacity
+                            </p>
+                          </div>
+                          <div class="p-2.5">
+                            <h3 class="font-semibold">LICENSE</h3>
+                            <p class="text-[0.9rem]">
+                              A1 - CBT from 17 years old (125cc equivalent)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <button
+                          class="text-soco-light-primary inline-flex items-center justify-center gap-0.5 bg-soco-red px-9 py-3 text-[1rem] font-semibold"
+                        >
+                          EXPLORE<box-icon
+                            name="right-arrow-alt"
+                            color="#ffffff"
+                          ></box-icon>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination section-swiper-pagination"></div>
+            <div class="swiper-pagination section-swiper-pagination m-1"></div>
           </div>
           <!-- <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div> -->
